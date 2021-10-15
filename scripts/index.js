@@ -28,7 +28,7 @@ function rollDice(playerIndex) {
     const playerNodes = document.getElementById(`player${playerIndex}`);
     playerNodes
         .querySelector(".dice img")
-        .setAttribute("src", `../images/dice${randomNumber}.png`);
+        .setAttribute("src", `./images/dice${randomNumber}.png`);
     switch (playerIndex) {
         case 1:
             firstPlayerScore += randomNumber;
@@ -103,7 +103,7 @@ function resetCurrentGame(){
             0
         </h1>
         <div class="dice">
-            <img src="../images/dice1.png" />
+            <img src="./images/dice1.png" />
         </div>
         <div class="input-group button" id="player-1-button">
             <input type="button" value="Roll Dice" onclick="rollDice(1)" />
@@ -119,7 +119,7 @@ function resetCurrentGame(){
                 0
             </h1>
             <div class="dice">
-                <img src="../images/dice1.png" />
+                <img src="./images/dice1.png" />
             </div>
             <div class="input-group button" id="player-2-button">
                 <input type="button" value="Roll Dice" onclick="rollDice(2)" disabled />
